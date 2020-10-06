@@ -41,8 +41,21 @@ Jupyter Notebook
 
 # How
 
-Used class that takes input string with shapes. Three methods called convert_matrix,split_rows,split_columns are defined in the class to perform the task for generating a matrix followed by row and columns extraction.
+**Step1:** Class *Matrix_Spit()* that takes input string with shapes(dimensions).
 
-*This program works for dynamic input
+**Step2:** Three methods called convert_matrix,split_rows,split_columns are defined in the class.
+
+**a.** *convert_matrix()* that converts input string to matrix by using numpy.arange() and reshapes to input dimensions.
+
+**b.** *split_rows()* takes matrix as input and read each row and stores in the list.
+
+**c.** *split_columns()* takes matrix as input and perform transpose to get columns. Each column is read and stored in the column list.
+
+**Step3:** each row and column from the respective lists  are fed to *join()* to add ',' to the elements.Followed by extracting the numeric values by slice.
+
+
+
+
+*This program works for **dynamic input**
 
 
